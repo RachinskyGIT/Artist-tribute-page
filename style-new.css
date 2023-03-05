@@ -1,0 +1,527 @@
+
+/*________style all elements section__________________*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: "Baumans", "Rubik", sans-serif;
+	background-color:  #3e7141;
+	overflow-x: hidden;
+  }
+
+  h2 {  	
+	text-align: center;
+	margin-bottom: 0;
+}
+  
+  .content-container {
+	padding: 5px;
+	background-color: #ebdbcb
+  }
+
+  .content-container2 {
+	padding-bottom: 55px;
+  }
+
+  .content-section-title {
+	padding: 20px; 
+	background-color: #ebdbcb
+  }
+
+  .col-container:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .column-one {
+	float: left;
+	width: 66.66666%;
+	padding: 25px;
+  }
+  
+  .column-two {
+	float: left;
+	width: 33.33333%;
+	padding: 25px;
+  }
+  
+  .l-font {
+	font-size: 25px;
+	color: #03071e;
+  }
+  
+  .xl-font {
+	font-size: 65px;
+	color: #03071e;
+  }
+
+  .xxl-font {
+	font-size: 80px;
+	color: #03071e;
+	font-family: "Baumans";
+  }
+  
+  img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+  }
+
+
+/*________style header__________________*/
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 49px;
+	z-index: 1;
+	background-color: #3e7141;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid #ebdbcb;
+	border-radius: 5px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	max-width: 1430px;
+}
+
+.navigation a {
+	text-decoration: none;
+	font-family: "Baumans";
+	color: #ffffff;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	height: 100%;
+}
+
+.navigation a:hover {
+	color: #444444;
+	background-color: #ffffff;
+}
+
+.overlay-content {
+	display: none;
+}
+
+.openbtn {
+	display: none;
+}
+
+.closebtn {
+	display: none;
+	font-family: "Baumans";
+}
+
+#little-monitor {
+	display: none;
+}
+
+/*________style main__________________*/
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	position: relative;
+	top: 49px;
+}
+
+ .img-div {
+	background-image: url("https://i.imgur.com/zCj9ZGD.jpg");
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.text {
+	position: absolute;
+	top: 5vh;
+	left: 5vw;
+	color: #ffffff;
+}
+
+.title {
+	font-size: 80px;
+	font-family: "Baumans";
+	margin-top: 40px;
+	transform: rotate(6.3deg);
+}
+
+.img-caption {
+	font-size: 30px;
+	margin-top: 7px;
+	font-style: italic;
+	perspective: 50em;
+	transform: rotate(5deg);
+}
+
+/*________style biography section__________________*/
+#biography {
+	display: flex;
+	flex-direction: column;
+	background-color: #ff8400a0;
+	width: 100%;
+	font-family: "Rubik";
+}
+
+.tribute-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0 90px 40px 90px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.tribute-info img {
+	width: 320px;
+	height: 320px;
+	border-radius: 100%;
+	position: relative;
+	bottom: 360px;
+	right: 40px;
+}
+
+.tribute-info p {
+	width: 1000px;
+	line-height: 1.6;
+	padding: 20px;
+	font-size: 22px;
+}
+
+
+/*________style Arts section__________________*/
+
+#arts {
+	display: flex;
+	flex-direction: column;
+	padding-top: 35px;
+}
+
+#artpic {
+	border: 7px solid #03071e;
+	border-radius: 5px;
+	background-color: transparent;
+	box-shadow: 5px 10px 14px rgb(81, 82, 82, 0.4);
+  }
+
+#art-Ok {
+	display: flex;
+	flex-direction: row-reverse;
+	padding-top: 0px;
+	background-color:  #3e7141;
+	width: 100%;
+	text-align: end;	
+}
+
+#art-Girl {
+	display: flex;
+	flex-direction: row-reverse;
+	padding-top: 0px;
+	background-color: #ff8400a0;
+	width: 100%;
+}
+
+
+
+/*________style projects section__________________*/
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 25px;
+	background-color:  #3e7141;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	max-width: 1345px;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 5px 10px 14px rgb(81, 82, 82, 0.4);
+	margin: 20px;
+	font-family: "Baumans";
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.project-card p {
+	margin: 10px 0;
+}
+
+.project-card p:first-of-type {
+	margin-top: 30px;
+}
+
+.button {
+	border: 5px solid #03071e;
+	background-color: #ff8400a0;
+	padding: 14px 220px;
+	margin-top: 15px;
+	font-size: 20px;
+	cursor: pointer;
+	color: #03071e;
+	font-weight: bold;
+	transition: .2s;
+	white-space: nowrap;
+	text-align: center;
+	box-shadow: 5px 10px 14px rgb(81, 82, 82, 0.4);
+	font-family: "Baumans";
+	border-radius: 10px;
+  }
+  
+  .button:hover {
+	background-color: #03071e;
+	color: white;
+  }
+  
+
+/*________style contacts section__________________*/
+
+#contacts {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.logo {
+	margin: 0 15px;
+}
+
+#little-logo {
+	width: 60px;
+}
+
+#little-logo2 {
+	width: 42px;
+}
+
+
+/*________style footer__________________*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	position: relative;
+	top: 49px;
+	background-color: #3d5c5c;
+	color: #ffffff;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer a:hover {
+	color: #c7c406;
+}
+
+
+/* media queries for tablets with screens 1024px__________________*/
+
+@media screen and (max-width: 1024px) {
+
+	.title {
+		font-size: 35px;
+	}
+
+	.img-caption {
+		font-size: 15px;
+		margin-top: 0px;
+	}
+}
+
+/* media queries for tablets with screens 768px__________________*/
+
+@media screen and (max-width: 790px) {
+	.navigation a {
+		padding: 10px 12px;
+		font-size: 18px;
+	}
+
+	.title {
+		font-size: 35px;
+	}
+
+	.img-caption {
+		font-size: 15px;
+		margin-top: 0px;
+	}
+ 
+	.tribute-info {
+		flex-direction: column;
+		padding: 50px 40px;
+	}
+
+	.tribute-info img {
+		width: 320px;
+		height: 320px;
+		border-radius: 100%;
+		position: relative;
+		bottom: 0px;
+		right: 0px;
+	}
+
+	.tribute-info p {
+		width: 90%;
+	}
+
+	.row {
+		margin: 0 auto;
+		padding: 40px;
+	}
+
+	.column-one,
+	.column-two {
+	  width: 100%;
+	  text-align: center;
+	}
+	img {
+	  margin: auto;
+	}
+
+	/* media queries for mobiles with screens 375px__________________*/
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		justify-content: flex-end;
+	}
+
+	/* style navigation bar for small devices__________________*/
+
+	.navigation {
+		display: none;
+	}
+
+	.overlay {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		margin-top: 10px;
+		padding-left: 40px;
+	}
+
+	.overlay-content a,
+	.closebtn {
+		text-decoration: none;
+		font-family: "Baumans";
+		color: #d8d4d4;
+		padding: 10px 20px;
+		font-size: 36px;
+		font-weight: bold;
+	}
+
+	.closebtn {
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 20px;
+		font-size: 60px;
+	}
+
+	.openbtn {
+		display: block;
+		float: right;
+		font-size: 22px;
+		padding: 10px 20px;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	/* improve image position and the title__________________*/
+
+	#little-monitor {
+		display: inline;
+		font-size: 10px;
+		top: 10px;
+	}
+
+	.img-div {
+		background-position: center right 50%;
+	}
+
+	.title {
+		display: none;
+	}
+
+	.img-caption {
+		display: none;
+	}
+
+	.tribute-info {
+		flex-direction: column;
+		padding: 50px 30px;
+	}
+
+	.tribute-info p {
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.row {
+		margin: 0 auto;
+		padding: 40px 30px;
+		max-width: 375px;
+	}
+
+}
